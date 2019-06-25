@@ -14,8 +14,14 @@
         <header>
             <a href="./">Ainulindalë</a>
         </header>
-        <section class="hero-image">
-            <div class="image" style="background-image: url(./images/hero-image-0.jpg)">
+        <section class="hero">
+            <div class="hero-image-container carousel">
+                <div class="hero-image-fallback carousel-item" style="background-image:url(./images/hero-image-0.jpg)"></div>
+                <div class="carousel-item" style="background-image:url(./images/hero-image-1.jpg)"></div>
+                <div class="carousel-item" style="background-image:url(./images/hero-image-2.jpg)"></div>
+                <div class="carousel-item" style="background-image:url(./images/hero-image-3.jpg)"></div>
+            </div>
+            <div class="hero-content">
                 <h1>Ainulindalë</h1>
                 <h2>The Music of the Ainur</h2>
             </div>
@@ -46,7 +52,7 @@
             end amazed the Ainur, so that they bowed before Ilúvatar and were silent.
         </p>
         </main>
+        <script src="./scripts/carousel.js"></script>
         <script src="./scripts/app.js"></script>
     </body>
 </html>
-
