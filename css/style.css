@@ -16,34 +16,51 @@ header a {
     font-size: 2rem;
     line-height: 3rem;
 }
-.hero-image {
+.hero {
     position: relative;
     min-height: 400px;
     height: 50vh;
     overflow: hidden;
 }
-.hero-image .image {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-width: 100%;
+
+.hero .hero-image-container {
+    min-width: 100%;
+    overflow: hidden;
+}
+.hero .hero-image-container > div {
     position: absolute;
-    z-index: 0;
+    visibility: hidden;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.hero-image h1, .hero-image h2 {
+.hero .hero-image-container .hero-image-fallback {
+    visibility: visible;
+}
+
+.hero .hero-content {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+.hero .hero-content h1,
+.hero .hero-content h2 {
     color: #FAF9FA;
     text-shadow: 1px 1px 0px #4d9ba1, 2px 2px 1px black;
     font-size: 2rem;
 }
-.hero-image h1 {
+.hero h1 {
     margin: 10% 4% 0;
     font-size: 3rem;
 }
-.hero-image h2 {
+.hero h2 {
     margin: 1rem 4%;
 }
 main {
